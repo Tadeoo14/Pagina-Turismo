@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --primary-color:#000;
+    --secundary-color:#fff;
+}
+
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    height: 100vh;
+}
+.header{
+    background-color: rgb(35, 31, 31);
+    height: 80px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.header .logo{
+    transition: all 0.5s;
+    margin-left: 20px;
+}
+.header .logo a{
+    color: #fff;
+}
+.header .logo:hover{
+    transform: scale(1.2);
+}
+
+.header .nav-links li {
+    display: inline-block;
+    padding: 0 20px;
+    transition: all 0.5s;
+}
+.header .nav-links a{
+    color: #fff;
+}
+.header .nav-links li:hover{
+    transform: scale(1.2);
+   
+}
+.wrap-btn{
+    padding: 1.5rem;
+}
+.btn-a{
+    color: var(--secundary-color);
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 10px;
+    border: solid 2px #fff  ;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+.btn-a:hover{
+    background-color: #fff;
+    color: #000;
+    
+}
+.main-section{
+    height: 100vh;
+    background-color: antiquewhite;
+    background-image: url(./imagenes/Turismo-en-Argentina-1.jpg);
+    background-position:center;
+    background-size:cover;
+    display: flex;
+    align-items: center;
+}
+
+.wrap-main-section{
+    max-width: 600px;
+    color: var(--secundary-color);
+    padding: 15%;
+}
+
+.wrap-main-section h1{
+    font-size: 50px;
+    text-shadow: 0 2px 6px black;
+}
+.wrap-main-section p{
+    font-size: 20px;
+    text-shadow: 0 2px 6px black;
+}
+
+.info{
+    position: relative;
+}
+.info img{
+    width: 80%;
+}
+.info .texto{
+    background: rgba(255,255,255,.7);
+    max-width: 600px;
+    border: 2px solid #334755;
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    right: 100px;
+    transform: translateY(-50%);
+}
+.info .texto p{
+    margin: 10px 0;
+    color: #666;
+    font-size: 18px;
+    margin-top: 15px;
+    line-height: 25px;
+}
+.info .texto button{
+    background-color: #fff;
+    border: none;
+    border: 2px solid #334755;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    color: #666;
+    margin-top: 40px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.texto button:hover{
+    background-color: #000;
+    color: #fff;
+}
+.tittle-destino{
+    text-align: center;
+    font-size: 22px;
+}
+.fila{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 50px;
+}
+.fila .col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.col img{
+    width: 500px;
+    height: 250px;
+    background-size: contain;
+    background-image: center;
+    border-radius: 5px;
+    transition: all 0.5s;
+    box-shadow: 0 2px 4px 2px rgb(35, 30, 30);
+
+}
+.col img:hover{
+    transform: scale(1.1);
+}
+.col h3{
+    font-size: 20px;
+    margin-top: 20px;
+}
+.col p{
+    font-size: 18px;
+    margin-top: 10px;
+    padding: 0 40px;
+    text-align:center;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    margin-top: 20px;
+}
+.footer-links{
+    color: #fff;
+    font-size: 13px;
+    text-align: center;
+    margin: 8px 0 8px 0;
+}
+.footer-links a{
+    color: #fff;
+}
+
+@media(width< 1024px){
+    .fila{
+        flex-direction: column;
+    }
+    .fila .col{
+        margin: 20px auto;
+    }
+    .info img{
+        width: 100%;
+    }
+    .texto{
+        height: 250px;
+        justify-content: center;
+    }
+}
